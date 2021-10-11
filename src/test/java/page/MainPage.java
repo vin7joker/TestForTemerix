@@ -34,15 +34,4 @@ public class MainPage extends BasePage{
         Assert.assertTrue(isSelecor,"Вы неправильно ввели название раздела");
         $x(selector).click();
     }
-
-    /*public void goToSection(String section){
-        CATALOG.scrollTo();
-        actions().moveToElement(CATALOG).perform();
-        waitOneSecond();
-        actions().moveToElement(POWER_TOOL).click().perform();
-        String selector = "//a[text()='"+section+"']";
-        boolean isSelecor = $x(selector).isDisplayed();
-        Assert.assertTrue(isSelecor,"Вы неправильно ввели название раздела");
-        $x(selector).click();
-    }*/
 }
